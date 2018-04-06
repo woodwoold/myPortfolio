@@ -9,11 +9,32 @@ $width-sidebar: 160px !global;
    min-width: $width-sidebar;
    background-color: #372db4;
    position: fixed;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   /*overflow-y: scroll;
+   (*&::-webkit-scrollbar-track
+   {
+	border-radius: 10px;
+		background-color: #372db4;
+   }
+
+   &::-webkit-scrollbar
+   {
+	width: 8px;
+	background-color: #372db4;
+   }
+
+   &::-webkit-scrollbar-thumb
+   {
+	border-radius: 5px;
+	background-color: #b5b0f7;
+}*/
 }
 
 .user {
    background-color: #fff;
-   padding-top: 20px;
+   padding-top: 10%;
    padding-bottom:15px;
 }
 .img-wrap {
@@ -31,7 +52,7 @@ $width-sidebar: 160px !global;
 .user__text {
    margin-top: 20px;
    font-family: 'Montserrat', sans-serif;
-   font-size: 18px;
+   font-size: 16px;
    font-weight: 600;
    color: #2a2a2a;
    text-align: center;
@@ -40,12 +61,11 @@ $width-sidebar: 160px !global;
 .menu {
    margin: 0;
    padding-left:0;
-   
+   flex-grow: 1;
 }
 
 .menu__item {
    box-sizing: border-box;
-   height: 93px;
    .fa{
       color: #b5b0f7;
       font-size: 26px;
@@ -55,10 +75,10 @@ $width-sidebar: 160px !global;
    border-top: 1px solid #493fc8;
    margin: 0;
    text-align: center;
-   padding:15px 0 5px 0;
+
    &:last-child {
       padding-bottom: 5px;
-      border-bottom: 1px solid #493fc8;
+
    }
    &:hover{
       background-color: #493fc8;
@@ -70,7 +90,8 @@ $width-sidebar: 160px !global;
 }
 
 .menu__link {
-
+   display: block;
+   padding:11% 0 5px 0;
 }
 
 .menu__icon {
@@ -87,7 +108,7 @@ $width-sidebar: 160px !global;
 .social {
    background-color: #393fc8;
    margin: 0;
-   padding: 12px 0;
+   padding: 14px 0;
    text-align: center;
 }
 

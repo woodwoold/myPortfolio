@@ -3,9 +3,10 @@
 @import "sidebar.scss";
 .about{
    width: 86vw;
-   margin-left: $width-sidebar;
+   margin-left: $width-sidebar+20px;
+
 }
-.about__container{
+.about__container, .skill__container{
    max-width: 950px;
    margin: 0 auto;
    text-align: center;
@@ -25,23 +26,24 @@
    color: #a8a8a8;
 
 }
-.head-box{
+.head-section{
    margin-top: 100px;
    border-bottom: 2px solid #e1e1e1;
    padding-bottom: 32px;
    position: relative;
+   &::after{
+   position: absolute;
+   content: "";
+   height: 12px;
+   width: 12px;
+   background: #362cb1;
+   border-radius: 50%;
+   bottom:  0;
+   transform: translateY(50%);
+   }
 }
 .title-box{
-   &::after{
-    position: absolute;
-    content: "";
-    height: 12px;
-    width: 12px;
-    background: #362cb1;
-    border-radius: 50%;
-    bottom:  0;
-    transform: translateY(50%);
-   }
+
 }
 .info {
    display: flex;
@@ -130,4 +132,49 @@
 }
 .mysite-link {
 
+}
+.skill {
+
+}
+
+.skill__container {
+
+}
+
+.head-section {
+
+}
+
+.h1 {
+
+}
+
+.h2 {
+
+}
+.skill-list-box{
+   display: flex;
+}
+.skill__list {
+   text-align: left;
+   margin-top: 45px;
+   padding-left: 0;
+   flex-basis: 45%;
+   justify-content: space-between;
+   &:last-child{
+      margin-left: 10%;
+   }
+
+}
+
+.slill__item {
+   color: #35373e;
+   font-family: Montserrat;
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   padding: 20px 10px;
+   border-bottom: 2px solid #e0e0e0;
+   padding-left: 0;
+   margin-top: 10px;
 }
