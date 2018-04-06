@@ -1,0 +1,133 @@
+@import "normalize.scss";
+@import "font-awesome.min.scss";
+@import "sidebar.scss";
+.about{
+   width: 86vw;
+   margin-left: $width-sidebar;
+}
+.about__container{
+   max-width: 950px;
+   margin: 0 auto;
+   text-align: center;
+}
+.h1{
+   font-family: Montserrat;
+   font-size: 24px;
+   font-weight: 500;
+   text-transform: uppercase;
+   color: #000000;
+}
+.h2{
+   font-size: 16px;
+   font-weight: 400;
+   font-family: Montserrat;
+   text-transform: uppercase;
+   color: #a8a8a8;
+
+}
+.head-box{
+   margin-top: 100px;
+   border-bottom: 2px solid #e1e1e1;
+   padding-bottom: 32px;
+   position: relative;
+}
+.title-box{
+   &::after{
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    background: #362cb1;
+    border-radius: 50%;
+    bottom:  0;
+    transform: translateY(50%);
+   }
+}
+.info {
+   display: flex;
+   margin-top: 80px;
+}
+
+.info__box-img {
+   height: 270px;
+   width: 220px;
+   border: 2px solid black;
+}
+
+.info__img {
+   height: 100%;
+}
+.info__right{
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap:wrap;
+}
+.info__list {
+   flex-grow: 1;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-left: 0;
+   margin-left: 50px;
+}
+
+.info__item {
+   text-align: left;
+   padding: 10px;
+   font-family: Montserrat;
+   color: #5a5a5a;
+   font-size: 14px;
+   font-weight: 400;
+   padding-top: 0;
+   padding-left: 0;
+   &:last-child{
+      padding-bottom: 0;
+      margin-bottom: 0;
+   }
+}
+
+.info__text_bold {
+   font-family: Montserrat;
+   font-size: 14px;
+   font-weight: 600;
+   color: #35373e;
+   margin-right: 5px;
+}
+.info_box-text{
+   margin-left: 50px;
+}
+.info__text{
+   line-height: 22px;
+   font-weight: 400;
+   color: #5a5a5a;
+   font-family: Montserrat;
+   font-size: 14px;
+   text-align: justify;
+}
+.resume-btn{
+   margin-left: 50px;
+   border: 2px solid #35373e;
+   height: 35px;
+}
+.resume-btn__Link{
+   display: block;
+   font-family: Montserrat;
+   font-size: 12px;
+   font-weight: 600;
+   text-transform: uppercase;
+   color: #35373e;
+   padding: 10px 20px;
+   &:hover{
+      background-color: #adff6e;
+      transform: scale(1.2);
+      color:#5a5a5a;
+   }
+   &:active{
+      background-color: #adff6e;
+      transform: scale(1.2);
+      color:#5a5a5a;
+       box-shadow: inset 5px 5px 8px rgba(160, 160, 140, 0.5);
+   }
+}
+.mysite-link {
+
+}
