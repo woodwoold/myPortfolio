@@ -2659,7 +2659,8 @@ ul {
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s; }
   .menu__item:last-child {
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    border-bottom: 1px solid #493fc8; }
   .menu__item:hover {
     background-color: #493fc8; }
     .menu__item:hover .fa {
@@ -2696,15 +2697,35 @@ ul {
   transition: 0.4s; }
 
 .social__link:hover .fa {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2); }
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3); }
+
+.foooter {
+  height: 60px;
+  -webkit-box-shadow: inset 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 6px 20px rgba(0, 0, 0, 0.15);
+  padding-top: 40px;
+  margin-left: -20px;
+  margin-top: 120px; }
+
+.footer__conrainer {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center; }
+
+.foooter__text {
+  color: #5a5a5a;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 auto; }
 
 .about {
   width: 86vw;
   margin-left: 180px; }
 
-.about__container, .skill__container {
+.about__container, .skill__container, .opinion__container {
   max-width: 950px;
   margin: 0 auto;
   text-align: center; }
@@ -2802,7 +2823,8 @@ ul {
   color: #5a5a5a;
   font-family: Montserrat;
   font-size: 14px;
-  text-align: justify; }
+  text-align: justify;
+  text-indent: 35px; }
 
 .resume-btn {
   margin-left: 50px;
@@ -2859,3 +2881,46 @@ ul {
   border-bottom: 2px solid #e0e0e0;
   padding-left: 0;
   margin-top: 10px; }
+
+.feedback {
+  max-width: 650px;
+  margin: 0 auto;
+  display: none;
+  text-align: center;
+  margin-top: 60px; }
+
+.feedback__text {
+  line-height: 22px;
+  font-weight: 400;
+  color: #5a5a5a;
+  font-family: Montserrat;
+  font-size: 16px;
+  text-align: justify;
+  text-align: center; }
+
+.feedback__img-box {
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  margin-top: 40px; }
+
+.feedback__img {
+  max-width: 100%;
+  border-radius: 50%; }
+
+.feedback__name {
+  color: #3e3e3e;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-weight: 600; }
+
+.feedback__company {
+  color: #3e3e3e;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-weight: 400; }
+
+.active-feedback {
+  display: block; }

@@ -1,12 +1,13 @@
 @import "normalize.scss";
 @import "font-awesome.min.scss";
 @import "sidebar.scss";
+@import "footer.scss";
 .about{
    width: 86vw;
    margin-left: $width-sidebar+20px;
 
 }
-.about__container, .skill__container{
+.about__container, .skill__container, .opinion__container{
    max-width: 950px;
    margin: 0 auto;
    text-align: center;
@@ -104,6 +105,7 @@
    font-family: Montserrat;
    font-size: 14px;
    text-align: justify;
+   text-indent: 35px;
 }
 .resume-btn{
    margin-left: 50px;
@@ -133,25 +135,8 @@
 .mysite-link {
 
 }
-.skill {
 
-}
 
-.skill__container {
-
-}
-
-.head-section {
-
-}
-
-.h1 {
-
-}
-
-.h2 {
-
-}
 .skill-list-box{
    display: flex;
 }
@@ -177,4 +162,63 @@
    border-bottom: 2px solid #e0e0e0;
    padding-left: 0;
    margin-top: 10px;
+}
+.opinion {
+
+}
+
+.feedback {
+   max-width: 650px;
+   margin: 0 auto;
+   display: none;
+   text-align: center;
+   margin-top: 60px;
+
+}
+
+.feedback__text {
+   line-height: 22px;
+   font-weight: 400;
+   color: #5a5a5a;
+   font-family: Montserrat;
+   font-size: 16px;
+   text-align: justify;
+   text-align: center;
+}
+
+.feedback__person {
+
+}
+
+.feedback__img-box {
+   margin: 0 auto;
+   width: 80px;
+   height: 80px;
+   margin-top: 40px;
+
+}
+
+.feedback__img {
+   max-width: 100%;
+   border-radius: 50%;
+}
+
+.feedback__name {
+   color: #3e3e3e;
+   font-family: Montserrat;
+   font-size: 14px;
+   font-weight: 300;
+   font-weight: 600;
+
+}
+
+.feedback__company {
+   color: #3e3e3e;
+   font-family: Montserrat;
+   font-size: 14px;
+   font-weight: 300;
+   font-weight: 400;
+}
+.active-feedback{
+   display: block;
 }

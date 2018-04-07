@@ -78,7 +78,7 @@ $width-sidebar: 160px !global;
 
    &:last-child {
       padding-bottom: 5px;
-
+      border-bottom: 1px solid #493fc8;
    }
    &:hover{
       background-color: #493fc8;
@@ -129,7 +129,7 @@ $width-sidebar: 160px !global;
    }
    &:hover{
       .fa{
-         transform: scale(1.2)
+         transform: scale(1.3)
       }
    }
 }
