@@ -1,9 +1,10 @@
+ $height-footer:50px;
 .foooter {
-   height: 50px;
+   height: $height-footer;
    box-shadow: inset 0 6px 20px rgba(0, 0, 0, 0.15);
    padding-top: 40px;
    margin-left: -20px;
-   margin-top: 120px;
+   margin-top: -$height-footer;
 }
 
 

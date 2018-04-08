@@ -2702,12 +2702,12 @@ ul {
   transform: scale(1.3); }
 
 .foooter {
-  height: 60px;
+  height: 50px;
   -webkit-box-shadow: inset 0 6px 20px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 6px 20px rgba(0, 0, 0, 0.15);
   padding-top: 40px;
   margin-left: -20px;
-  margin-top: 120px; }
+  margin-top: -50px; }
 
 .footer__conrainer {
   max-width: 950px;
@@ -2721,9 +2721,21 @@ ul {
   font-weight: 400;
   margin: 0 auto; }
 
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative; }
+  .wrapper::after {
+    content: "";
+    display: block;
+    height: 50px;
+    overflow: hidden; }
+
 .resume {
   width: 86vw;
-  margin-left: 180px; }
+  margin-left: 180px;
+  margin-right: 15px;
+  padding-bottom: 110px; }
 
 .resume__container {
   max-width: 950px;
@@ -2766,9 +2778,14 @@ ul {
   display: -ms-flexbox;
   display: flex;
   margin-top: 75px;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.experience__left {
+  width: 47%; }
 
 .resume__title {
   background-color: #DDDDDD;
@@ -2777,7 +2794,8 @@ ul {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 15px 0 15px 20px; }
+  padding: 15px 0 15px 20px;
+  border-radius: 5px; }
   .resume__title .fa {
     font-size: 22px;
     color: #362cb1;
@@ -2785,17 +2803,33 @@ ul {
     margin-right: 15px; }
 
 .education, .work {
-  padding: 0; }
+  padding: 0;
+  border-left: 2px solid #d1d1d1;
+  margin-top: 50px;
+  margin-left: 5px; }
 
 .education__item, .work__item {
   padding-left: 25px;
-  border-left: 1px solid #d1d1d1; }
+  padding-top: 5px;
+  position: relative; }
+  .education__item:first-child, .work__item:first-child {
+    padding-top: 0; }
 
 .education__date, .work__date {
   color: #5a5a5a;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400; }
+  .education__date::before, .work__date::before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    left: -9px;
+    border: 2px solid #362cb2; }
+  .education__date:first-child, .work__date:first-child {
+    margin-top: 0; }
 
 .education__title, .work__title {
   color: #000000;
@@ -2811,4 +2845,4 @@ ul {
   font-weight: 400; }
 
 .experience__right {
-  margin-left: 30px; }
+  width: 47%; }
