@@ -63,15 +63,15 @@ margin-right: 15px;
 .advantages__header {
     color: #000000;
     text-align: left;
+    display: flex;
+    align-items: center;
     .fa {
-        color: #35373e;
-        font-size: 20px;
+        color: #FF7400;
+        font-size: 32px;
         font-weight: 600;
     }
     i{
         display: inline-block;
-        border: 1px solid #35373e;
-        padding: 8px;
         margin-right: 10px;
         text-align: left;
 
@@ -94,5 +94,107 @@ margin-right: 15px;
     color: #5a5a5a;
     font-family: Montserrat;
     font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.progress {
+    padding: 100px 0;
+    background-color: #f7f7f7;
+}
+
+.achivment {
+    display: flex;
+    padding:0;
+    margin: 0;
+}
+
+.achivment__item {
+    margin-right: 15px;
+    .fa{
+        color: #FFC840;
+        font-size: 36px;
+        margin-bottom: 15px;
+
+    }
+}
+
+.fa {
+
+}
+
+.achivment__number {
+    color: #35373e;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.achivment__text {
+    color: #5e5e5e;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 20px;
+
+}
+.howIWork {
+
+}
+
+
+
+.process {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 50px;
+}
+
+.process__item {
+    margin: 0;
+    padding: 0;
+    width: 48%;
+    position: relative;
+    &:nth-child(n){
+        text-align: right;
+    }
+    &:nth-child(2n){
+        text-align: left;
+        margin-left: 50%
+    }
+
+
+
+}
+
+.process__number {
+    color: #d4d4d4;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.process__title {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+
+}
+
+.process__text {
+    color: #5a5a5a;
+    font-family: Montserrat;
+    font-size: 14px;
     font-weight: 400;
 }
