@@ -2,6 +2,7 @@
 @import "font-awesome.min.scss";
 @import "sidebar.scss";
 @import "footer.scss";
+
 .about{
    width: 86vw;
    margin-left: $width-sidebar+20px;
@@ -170,7 +171,6 @@
 .feedback {
    max-width: 650px;
    margin: 0 auto;
-   display: none;
    text-align: center;
    margin-top: 60px;
 
