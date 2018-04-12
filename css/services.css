@@ -2593,25 +2593,17 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  /*overflow-y: scroll;
-   (*&::-webkit-scrollbar-track
-   {
-	border-radius: 10px;
-		background-color: #372db4;
-   }
-
-   &::-webkit-scrollbar
-   {
-	width: 8px;
-	background-color: #372db4;
-   }
-
-   &::-webkit-scrollbar-thumb
-   {
-	border-radius: 5px;
-	background-color: #b5b0f7;
-}*/
+  overflow-y: scroll;
   z-index: 100; }
+  .nav::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #372db4; }
+  .nav::-webkit-scrollbar {
+    width: 8px;
+    background-color: #372db4; }
+  .nav::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #b5b0f7; }
 
 .user {
   background-color: #fff;
@@ -3258,6 +3250,10 @@ ul {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-left: 0; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .advantages {
+      -ms-flex-pack: distribute;
+      justify-content: space-around; } }
 
 .advantages__item {
   -ms-flex-preferred-size: 31%;

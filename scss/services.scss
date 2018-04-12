@@ -51,6 +51,9 @@ margin-right: 15px;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 0;
+    @media (min-width: 992px) and (max-width: 1199px) {
+        justify-content: space-around;
+    }
 }
 
 .advantages__item {
@@ -107,6 +110,7 @@ margin-right: 15px;
     display: flex;
     padding:0;
     margin: 0;
+
 }
 
 .achivment__item {
