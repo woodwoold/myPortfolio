@@ -2646,7 +2646,28 @@ html {
       flex-direction: row;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      margin-top: 0px; } }
+      margin-top: 0px;
+      width: 100%; } }
+  @media (max-width: 767px) and (orientation: portrait) {
+    .nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      width: 100%; } }
+  @media (max-width: 480px) and (orientation: portrait) {
+    .nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      width: 100%; } }
 
 .user {
   background-color: #fff;
@@ -2743,7 +2764,7 @@ html {
       padding: 5px; } }
   @media (max-width: 480px) {
     .menu__link {
-      padding: 15px 10px; } }
+      padding: 15px 5px 5px 5px; } }
 
 .menu__text {
   text-transform: uppercase;
@@ -2754,7 +2775,7 @@ html {
   /* Landscape phones and smaller */ }
   @media (max-width: 480px) {
     .menu__text {
-      display: none; } }
+      font-size: 7px; } }
 
 .social {
   background-color: #393fc8;
@@ -2800,7 +2821,9 @@ html {
   @media (max-width: 480px) {
     .foooter {
       margin-left: 0;
-      margin-right: 0; } }
+      margin-right: 0;
+      padding-left: 10px;
+      padding-right: 10px; } }
 
 .footer__conrainer {
   max-width: 59.38rem;
@@ -2829,15 +2852,29 @@ html {
   width: 86vw;
   margin-left: 9.25rem;
   margin-right: .94rem;
-  padding-bottom: 5, 625rem3.75rem; }
+  padding-bottom: 5, 625rem3.75rem;
+  /* Portrait tablets and small desktops */
+  /* Landscape phones and portrait tablets */ }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .resume {
+      margin-right: 20px;
+      width: 80vw; } }
+  @media (max-width: 767px) {
+    .resume {
+      margin-right: 20px;
+      width: 74vw; } }
   @media (max-width: 480px) {
     .resume {
       margin-left: 10px;
-      margin-right: 10px; } }
+      margin-right: 10px;
+      width: 90vw; } }
 
 .resume__container {
   max-width: 59.38rem;
   margin: 0 auto; }
+  @media (max-width: 480px) {
+    .resume__container {
+      max-width: 100; } }
 
 .head-section {
   margin-top: 6.25rem;
@@ -2880,10 +2917,33 @@ html {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  /* Landscape phones and portrait tablets */ }
+  @media (max-width: 767px) {
+    .experience {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  @media (max-width: 480px) {
+    .experience {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
-.experience__left {
-  width: 47%; }
+.experience__left, .experience__right {
+  width: 47%;
+  min-width: 270px; }
+
+.experience__right {
+  margin-right: 10px; }
+  @media (max-width: 767px) {
+    .experience__right {
+      margin-top: 40px;
+      margin-bottom: 40px; } }
+  @media (max-width: 480px) {
+    .experience__right {
+      margin-top: 40px;
+      margin-bottom: 40px; } }
 
 .resume__title {
   background-color: #DDDDDD;
@@ -2941,6 +3001,3 @@ html {
   font-family: Montserrat;
   font-size: .88rem;
   font-weight: 400; }
-
-.experience__right {
-  width: 47%; }

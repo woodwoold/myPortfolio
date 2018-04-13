@@ -2646,7 +2646,28 @@ html {
       flex-direction: row;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      margin-top: 0px; } }
+      margin-top: 0px;
+      width: 100%; } }
+  @media (max-width: 767px) and (orientation: portrait) {
+    .nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      width: 100%; } }
+  @media (max-width: 480px) and (orientation: portrait) {
+    .nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      width: 100%; } }
 
 .user {
   background-color: #fff;
@@ -2743,7 +2764,7 @@ html {
       padding: 5px; } }
   @media (max-width: 480px) {
     .menu__link {
-      padding: 15px 10px; } }
+      padding: 15px 5px 5px 5px; } }
 
 .menu__text {
   text-transform: uppercase;
@@ -2754,7 +2775,7 @@ html {
   /* Landscape phones and smaller */ }
   @media (max-width: 480px) {
     .menu__text {
-      display: none; } }
+      font-size: 7px; } }
 
 .social {
   background-color: #393fc8;
@@ -2800,6 +2821,12 @@ html {
     .foooter {
       margin-left: 0;
       margin-right: 0; } }
+  @media (max-width: 480px) and (max-width: 480px) {
+    .foooter {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 10px;
+      padding-right: 10px; } }
 
 .footer__conrainer {
   max-width: 59.38rem;
@@ -3299,11 +3326,22 @@ html {
   width: 86vw;
   margin-left: 9.25rem;
   margin-right: .94rem;
-  border: 1px solid white; }
+  border: 1px solid white;
+  /* Portrait tablets and small desktops */
+  /* Landscape phones and portrait tablets */ }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .services {
+      margin-right: 20px;
+      width: 80vw; } }
+  @media (max-width: 767px) {
+    .services {
+      margin-right: 20px;
+      width: 74vw; } }
   @media (max-width: 480px) {
     .services {
       margin-left: 10px;
-      margin-right: 10px; } }
+      margin-right: 10px;
+      width: 90vw; } }
 
 .services__container, .skill__container, .opinion__container {
   max-width: 59.38rem;
@@ -3426,14 +3464,25 @@ html {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
-  margin: 0; }
-  @media (max-width: 480px) {
+  margin: 0;
+  /* Landscape phones and portrait tablets */
+  /* Landscape phones and smaller */ }
+  @media (max-width: 767px) {
     .achivment {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
+  @media (max-width: 480px) {
+    .achivment {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .achivment__item {
   margin-right: .94rem; }

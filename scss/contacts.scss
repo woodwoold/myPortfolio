@@ -18,9 +18,22 @@
    width: 86vw;
    margin-left: $width-sidebar+1.25rem;
    margin-right: .94rem;
+   /* Portrait tablets and small desktops */
+   @media (min-width: 768px) and (max-width: 991px) {
+       margin-right: 20px;
+       width: 80vw;
+   }
+
+   /* Landscape phones and portrait tablets */
+   @media (max-width: 767px) {
+       margin-right: 20px;
+       width: 74vw;
+   }
+
    @media (max-width: 480px) {
       margin-left: 10px;
       margin-right: 10px;
+      width: 90vw;
    }
 
 
@@ -75,6 +88,12 @@
     flex-wrap: wrap;
     margin-left: 0;
     padding-left: 0;
+    @media (max-width: 480px) {
+       max-width: 440px;
+       flex-direction: column;
+       align-items:center;
+       flex-wrap: nowrap;
+    }
 }
 
 .contacts__item {
@@ -89,6 +108,7 @@
             transform: scale(1.2);
         }
     }
+
 
 }
 

@@ -10,11 +10,24 @@
    width: 86vw;
    margin-left: $width-sidebar+1.25rem;
    margin-right: .94rem;
-   
+
    border: 1px solid white;
+   /* Portrait tablets and small desktops */
+   @media (min-width: 768px) and (max-width: 991px) {
+       margin-right: 20px;
+       width: 80vw;
+   }
+
+   /* Landscape phones and portrait tablets */
+   @media (max-width: 767px) {
+       margin-right: 20px;
+       width: 74vw;
+   }
+
    @media (max-width: 480px) {
       margin-left: 10px;
       margin-right: 10px;
+      width: 90vw;
    }
 
 }
@@ -134,9 +147,15 @@
     padding:0;
     margin: 0;
 
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 767px) {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /* Landscape phones and smaller */
     @media (max-width: 480px) {
       justify-content: center;
-      flex-wrap: wrap;
+      flex-direction: column;
     }
 }
 
@@ -148,11 +167,10 @@
         margin-bottom: .94rem;
 
     }
-}
-
-.fa {
 
 }
+
+
 
 .achivment__number {
     color: #35373e;

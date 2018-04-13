@@ -68,10 +68,23 @@ $width-sidebar: 10rem !global;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 0px;
+    width: 100%;
     }
-    /* Delite scrollbar fo long device */
-    @media (min-height: 920px) and (max-width: 1400px) {
 
+    @media (max-width: 767px) and (orientation:portrait) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+
+    /* Delite scrollbar fo long device */
+    @media (max-width: 480px) and (orientation:portrait) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        width: 100%;
     }
 }
 
@@ -182,7 +195,7 @@ $width-sidebar: 10rem !global;
    }
    /* Landscape phones and smaller */
    @media (max-width: 480px) {
-      padding: 15px 10px;
+      padding: 15px 5px 5px 5px;
 
    }
 }
@@ -203,7 +216,7 @@ $width-sidebar: 10rem !global;
 
     /* Landscape phones and smaller */
     @media (max-width: 480px) {
-    display: none;
+    font-size: 7px;
 
     }
 }

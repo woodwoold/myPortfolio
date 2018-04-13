@@ -6,13 +6,27 @@ body{
     position: relative;
 }
 .main {
+    height: 100%;
    width: 100vw;
-
    margin-left: $width-sidebar;
    position: relative;
+
+   /* Portrait tablets and small desktops */
+   @media (min-width: 768px) and (max-width: 991px) {
+       margin-right: 20px;
+       width: 80vw;
+   }
+
+   /* Landscape phones and portrait tablets */
+   @media (max-width: 767px) {
+       margin-right: 20px;
+       width: 74vw;
+   }
+
    @media (max-width: 480px) {
       margin-left: 10px;
       margin-right: 10px;
+      width: 68vw;
    }
 
 }
@@ -30,11 +44,24 @@ body{
    color: #fff;
    background: rgba(0,0,0,0.7);
    padding: .63rem;
-
+   top:150px;
+   right: 10px;
    position: absolute;
    z-index: 10;
-   right:25%;
-   top:3.13rem;
+
+   @media (min-width: 768px) and (max-width: 991px) {
+
+   }
+
+   /* Landscape phones and portrait tablets */
+   @media (max-width: 767px) {
+
+   }
+
+   @media (max-width: 480px) {
+
+   }
+
 }
 .container{
     width: 86vw;
@@ -61,8 +88,20 @@ body{
     background: rgba(0,0,0,0.7);
     position: absolute;
     z-index: 10;
-    right:10.13rem;
-    top:13.75rem;
+    right:15%;
+    top:230px;
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    }
+
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 767px) {
+
+    }
+
+    @media (max-width: 480px) {
+
+    }
 }
 .video-box{
 
