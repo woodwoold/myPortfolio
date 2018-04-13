@@ -4,28 +4,44 @@
 @import "footer.scss";
 
 
-
-
 .about{
    width: 86vw;
-   margin-left: $width-sidebar+20px;
-   margin-right: 30px;
+   margin-left: $width-sidebar+1.25rem;
+   margin-right: 1.88rem;
+   border: 1px solid white;
+   @media (min-width: 768px) and (max-width: 991px) {
+   margin-right: 1.88rem;
+   }
+
+   /* Landscape phones and portrait tablets */
+   @media (max-width: 767px) {
+  margin-right: 1.88rem;
+   }
+
+   /* Landscape phones and smaller */
+  
+
+   @media (max-width: 480px) {
+      margin-left: 10px;
+
+   }
+
 
 }
 .about__container, .skill__container, .opinion__container{
-   max-width: 950px;
+   max-width: 59.38rem;
    margin: 0 auto;
    text-align: center;
 }
 .h1{
    font-family: Montserrat;
-   font-size: 24px;
+   font-size: 1.5rem;
    font-weight: 500;
    text-transform: uppercase;
    color: #000000;
 }
 .h2{
-   font-size: 16px;
+   font-size: 1rem;
    font-weight: 400;
    font-family: Montserrat;
    text-transform: uppercase;
@@ -33,15 +49,15 @@
 
 }
 .head-section{
-   margin-top: 100px;
-   border-bottom: 2px solid #e1e1e1;
-   padding-bottom: 32px;
+   margin-top: 6.25rem;
+   border-bottom: .13rem solid #e1e1e1;
+   padding-bottom: 2rem;
    position: relative;
    &::after{
    position: absolute;
    content: "";
-   height: 12px;
-   width: 12px;
+   height: .75rem;
+   width: .75rem;
    background: #362cb1;
    border-radius: 50%;
    bottom:  0;
@@ -53,13 +69,13 @@
 }
 .info {
    display: flex;
-   margin-top: 80px;
+   margin-top: 5rem;
 }
 
 .info__box-img {
-   height: 270px;
-   width: 220px;
-   border: 2px solid black;
+   height: 16.88rem;
+   width: 13.75rem;
+   border: .13rem solid black;
 }
 
 .info__img {
@@ -75,15 +91,15 @@
    margin-top: 0;
    margin-bottom: 0;
    padding-left: 0;
-   margin-left: 50px;
+   margin-left: 3.13rem;
 }
 
 .info__item {
    text-align: left;
-   padding: 10px;
+   padding: .63rem;
    font-family: Montserrat;
    color: #5a5a5a;
-   font-size: 14px;
+   font-size: .88rem;
    font-weight: 400;
    padding-top: 0;
    padding-left: 0;
@@ -95,36 +111,36 @@
 
 .info__text_bold {
    font-family: Montserrat;
-   font-size: 14px;
+   font-size: .88rem;
    font-weight: 600;
    color: #35373e;
-   margin-right: 5px;
+   margin-right: .31rem;
 }
 .info_box-text{
-   margin-left: 50px;
+   margin-left: 3.13rem;
 }
 .info__text{
-   line-height: 22px;
+   line-height: 1.38rem;
    font-weight: 400;
    color: #5a5a5a;
    font-family: Montserrat;
-   font-size: 14px;
+   font-size: .88rem;
    text-align: justify;
-   text-indent: 35px;
+   text-indent: 2.19rem;
 }
 .resume-btn{
-   margin-left: 50px;
-   border: 2px solid #35373e;
-   height: 35px;
+   margin-left: 3.13rem;
+   border: .13rem solid #35373e;
+   height: 2.19rem;
 }
 .resume-btn__Link{
    display: block;
    font-family: Montserrat;
-   font-size: 12px;
+   font-size: .75rem;
    font-weight: 600;
    text-transform: uppercase;
    color: #35373e;
-   padding: 10px 20px;
+   padding: .63rem 1.25rem;
    &:hover{
       background-color: #adff6e;
       transform: scale(1.2);
@@ -134,7 +150,7 @@
       background-color: #adff6e;
       transform: scale(1.2);
       color:#5a5a5a;
-       box-shadow: inset 5px 5px 8px rgba(160, 160, 140, 0.5);
+       box-shadow: inset .31rem .31rem .5rem rgba(160, 160, 140, 0.5);
    }
 }
 .mysite-link {
@@ -147,7 +163,7 @@
 }
 .skill__list {
    text-align: left;
-   margin-top: 45px;
+   margin-top: 2.81rem;
    padding-left: 0;
    flex-basis: 45%;
    justify-content: space-between;
@@ -160,13 +176,13 @@
 .slill__item {
    color: #35373e;
    font-family: Montserrat;
-   font-size: 14px;
+   font-size: .88rem;
    font-weight: 600;
    text-transform: uppercase;
-   padding: 20px 10px;
-   border-bottom: 2px solid #e0e0e0;
+   padding: 1.25rem .63rem;
+   border-bottom: .13rem solid #e0e0e0;
    padding-left: 0;
-   margin-top: 10px;
+   margin-top: .63rem;
 
 }
 .opinion {
@@ -179,20 +195,20 @@
 
 
 .feedback__item {
-   max-width: 650px;
+   max-width: 40.63rem;
    margin: 0 auto;
    text-align: center;
-   margin-top: 60px;
+   margin-top: 3.75rem;
    padding-left: 0;
 
 }
 
 .feedback__text {
-   line-height: 22px;
+   line-height: 1.38rem;
    font-weight: 400;
    color: #5a5a5a;
    font-family: Montserrat;
-   font-size: 16px;
+   font-size: 1rem;
    text-align: justify;
    text-align: center;
 }
@@ -203,9 +219,9 @@
 
 .feedback__img-box {
    margin: 0 auto;
-   width: 80px;
-   height: 80px;
-   margin-top: 40px;
+   width: 5rem;
+   height: 5rem;
+   margin-top: 2.5rem;
 
 }
 
@@ -217,7 +233,7 @@
 .feedback__name {
    color: #3e3e3e;
    font-family: Montserrat;
-   font-size: 14px;
+   font-size: .88rem;
    font-weight: 300;
    font-weight: 600;
 
@@ -226,7 +242,7 @@
 .feedback__company {
    color: #3e3e3e;
    font-family: Montserrat;
-   font-size: 14px;
+   font-size: .88rem;
    font-weight: 300;
    font-weight: 400;
 }

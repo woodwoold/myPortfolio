@@ -6,6 +6,7 @@
     min-height: 100vh;
 	overflow: hidden;
 	position: relative;
+    padding: 0;
 
     &::after{
         content: "";
@@ -16,27 +17,31 @@
 }
 .resume{
    width: 86vw;
-   margin-left: $width-sidebar+20px;
-   margin-right: 15px;
-   padding-bottom: $height-footer+60px;
+   margin-left: $width-sidebar+1.25rem;
+   margin-right: .94rem;
+   padding-bottom: $height-footer+3.75rem;
+   @media (max-width: 480px) {
+      margin-left: 10px;
+      margin-right: 10px;
+   }
 
 }
 .resume__container{
-   max-width: 950px;
+   max-width: 59.38rem;
    margin: 0 auto;
 
 }
 .head-section{
-   margin-top: 100px;
-   border-bottom: 2px solid #e1e1e1;
-   padding-bottom: 32px;
+   margin-top: 6.25rem;
+   border-bottom: .13rem solid #e1e1e1;
+   padding-bottom: 2rem;
    position: relative;
    text-align: center;
    &::after{
    position: absolute;
    content: "";
-   height: 12px;
-   width: 12px;
+   height: .75rem;
+   width: .75rem;
    background: #362cb1;
    border-radius: 50%;
    bottom:  0;
@@ -45,13 +50,13 @@
 }
 .h1{
    font-family: Montserrat;
-   font-size: 24px;
+   font-size: 1.5rem;
    font-weight: 500;
    text-transform: uppercase;
    color: #000000;
 }
 .h2{
-   font-size: 16px;
+   font-size: 1rem;
    font-weight: 400;
    font-family: Montserrat;
    text-transform: uppercase;
@@ -60,7 +65,7 @@
 }
 .experience {
     display: flex;
-    margin-top: 75px;
+    margin-top: 4.69rem;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -73,17 +78,17 @@
     background-color:#DDDDDD;
     color: #000000;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 1.13rem;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 15px 0 15px 20px;
-    border-radius: 5px;
+    padding: .94rem 0 .94rem 1.25rem;
+    border-radius: .31rem;
 
     .fa {
-        font-size: 22px;
+        font-size: 1.38rem;
         color: #362cb1;
         font-weight: 400;
-        margin-right: 15px;
+        margin-right: .94rem;
 
     }
 }
@@ -92,16 +97,16 @@
 
 .education, .work {
     padding: 0;
-    border-left: 2px solid #d1d1d1;
-    margin-top: 50px;
-    margin-left: 5px;
+    border-left: .13rem solid #d1d1d1;
+    margin-top: 3.13rem;
+    margin-left: .31rem;
 }
 .work {
 
 }
 .education__item, .work__item {
-    padding-left:25px;
-    padding-top: 5px;
+    padding-left:1.56rem;
+    padding-top: .31rem;
     position: relative;
     &:first-child{
         padding-top: 0;
@@ -115,16 +120,16 @@
 .education__date, .work__date {
     color: #5a5a5a;
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: .88rem;
     font-weight: 400;
     &::before{
     position: absolute;
     content: "";
-    height: 12px;
-    width: 12px;
+    height: .75rem;
+    width: .75rem;
     border-radius: 50%;
-    left:  -9px;
-    border: 2px solid #362cb2;
+    left:  -.56rem;
+    border: .13rem solid #362cb2;
     }
     &:first-child{
         margin-top: 0;
@@ -134,7 +139,7 @@
 .education__title, .work__title {
     color: #000000;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
 
@@ -143,7 +148,7 @@
 .education__text, .work__text {
     color: #5a5a5a;
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: .88rem;
     font-weight: 400;
 
 }

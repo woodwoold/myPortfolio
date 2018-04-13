@@ -1,12 +1,19 @@
 body{
-
+ background-color: #101010;
+ font-size: 16px;
+}
+.wrapper{
+    position: relative;
 }
 .main {
    width: 100vw;
-   height: 100vh;
+
    margin-left: $width-sidebar;
    position: relative;
-   background-color: #101010;
+   @media (max-width: 480px) {
+      margin-left: 10px;
+      margin-right: 10px;
+   }
 
 }
 
@@ -19,15 +26,15 @@ body{
 }
 
 .main__h1 {
-   font-size: 80px;
+   font-size: 5rem;
    color: #fff;
    background: rgba(0,0,0,0.7);
-   padding: 10px;
+   padding: .63rem;
 
    position: absolute;
    z-index: 10;
-   right:22%;
-   top:50px;
+   right:25%;
+   top:3.13rem;
 }
 .container{
     width: 86vw;
@@ -37,7 +44,7 @@ body{
 .cover{
     position: absolute;
     z-index: 10;
-    right:100px;
+    right:6.25rem;
     top:0;
 
 }
@@ -45,8 +52,8 @@ body{
 
 }
 .main__text {
-    padding: 5px;
-    font-size: 22px;
+    padding: .31rem;
+    font-size: 1.38rem;
     font-weight: 600;
     font-family: Montserrat;
     text-transform: uppercase;
@@ -54,8 +61,8 @@ body{
     background: rgba(0,0,0,0.7);
     position: absolute;
     z-index: 10;
-    right:50px;
-    top:220px;
+    right:10.13rem;
+    top:13.75rem;
 }
 .video-box{
 

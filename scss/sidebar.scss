@@ -1,7 +1,20 @@
-$width-sidebar: 160px !global;
-.wrapper {
-   display: flex;
+$width-sidebar: 10rem !global;
+*{
+    @media (min-width: 768px) and (max-width: 991px) {
+    $width-sidebar: 8rem !global;
+    }
+
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 767px) {
+
+    }
+
+    /* Landscape phones and smaller */
+    @media (max-width: 480px) {
+
+    }
 }
+
 .body{
    font-family: 'Montserrat', sans-serif;
 }
@@ -15,34 +28,74 @@ $width-sidebar: 160px !global;
    overflow-y: scroll;
    &::-webkit-scrollbar-track
    {
-	border-radius: 10px;
+	border-radius: .63rem;
 		background-color: #372db4;
    }
 
    &::-webkit-scrollbar
    {
-	width: 8px;
+	width: .5rem;
 	background-color: #372db4;
    }
 
    &::-webkit-scrollbar-thumb
    {
-	border-radius: 5px;
+	border-radius: .31rem;
 	background-color: #b5b0f7;
+
 }
+    /* Large desktops and laptops */
+    @media (min-width: 1200px) {
+        overflow-y: hidden;
+    }
     z-index: 100;
+        /* Portrait tablets and small desktops */
+    @media (min-width: 768px) and (max-width: 991px) {
+        height: auto;
+
+        min-width: auto;
+    }
+
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 767px) {
+        height: auto;
+        margin-top: 50px;
+        min-width: auto;
+    }
+
+    /* Landscape phones and smaller */
+    @media (max-width: 480px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    }
+    /* Delite scrollbar fo long device */
+    @media (min-height: 920px) and (max-width: 1400px) {
+
+    }
 }
 
 .user {
    background-color: #fff;
    padding-top: 10%;
-   padding-bottom:15px;
+   padding-bottom:.94rem;
+   @media (min-width: 768px) and (max-width: 991px) {
+    display: none;
+   }
+   @media (max-width: 767px) {
+    display: none;
+   }
+
+   /* Landscape phones and smaller */
+   @media (max-width: 480px) {
+    display: none;
+   }
 }
 .img-wrap {
-   width: 120px;
-   height: 120px;
+   width: 7.5rem;
+   height: 7.5rem;
    margin: 0 auto;
-   margin-bottom: 10px;
+   margin-bottom: .63rem;
 }
 
 .user__img {
@@ -51,9 +104,9 @@ $width-sidebar: 160px !global;
 }
 
 .user__text {
-   margin-top: 20px;
+   margin-top: 1.25rem;
    font-family: 'Montserrat', sans-serif;
-   font-size: 16px;
+   font-size: 1rem;
    font-weight: 600;
    color: #2a2a2a;
    text-align: center;
@@ -63,13 +116,30 @@ $width-sidebar: 160px !global;
    margin: 0;
    padding-left:0;
    flex-grow: 1;
+   @media (min-width: 768px) and (max-width: 991px) {
+
+   }
+
+   /* Landscape phones and portrait tablets */
+   @media (max-width: 767px) {
+
+
+   /* Landscape phones and smaller */
+   @media (max-width: 480px) {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
+   }
+
 }
 
 .menu__item {
    box-sizing: border-box;
    .fa{
       color: #b5b0f7;
-      font-size: 26px;
+      font-size: 1.63rem;
       transition-property: color, font-size;
       transition-duration: 0.5s;
    }
@@ -78,21 +148,43 @@ $width-sidebar: 160px !global;
    text-align: center;
 
    &:last-child {
-      padding-bottom: 5px;
+      padding-bottom: .31rem;
       border-bottom: 1px solid #493fc8;
    }
    &:hover{
       background-color: #493fc8;
       .fa{
          color: #fff;
-         font-size: 32px;
+         font-size: 2rem;
       }
+   }
+   @media (min-width: 768px) and (max-width: 991px) {
+    padding: 5px;
+   }
+   @media (max-width: 767px) {
+
+   }
+   /* Landscape phones and smaller */
+   @media (max-width: 480px) {
+
+
    }
 }
 
 .menu__link {
    display: block;
-   padding:11% 0 5px 0;
+   padding:11% 0 .31rem 0;
+   @media (min-width: 768px) and (max-width: 991px) {
+    padding: 5px;
+   }
+   @media (max-width: 767px) {
+
+   }
+   /* Landscape phones and smaller */
+   @media (max-width: 480px) {
+      padding: 15px 10px;
+
+   }
 }
 
 .menu__icon {
@@ -101,21 +193,41 @@ $width-sidebar: 160px !global;
 
 .menu__text {
    text-transform: uppercase;
-   font-size: 14px;
+   font-size: .88rem;
    font-weight: 500;
    color: #ffffff;
-}
+       /* Landscape phones and portrait tablets */
+    @media (max-width: 767px) {
 
+    }
+
+    /* Landscape phones and smaller */
+    @media (max-width: 480px) {
+    display: none;
+
+    }
+}
 .social {
    background-color: #393fc8;
    margin: 0;
-   padding: 14px 0;
+   padding: .88rem 0;
    text-align: center;
+   @media (min-width: 768px) and (max-width: 991px) {
+    padding: 5px;
+   }
+   @media (max-width: 767px) {
+
+   }
+   /* Landscape phones and smaller */
+   @media (max-width: 480px) {
+    display: none;
+
+   }
 }
 
 .social__item {
    display: inline-block;
-   padding: 7px;
+   padding: .44rem;
    &:hover{
       .fa{color: #fff;}
 
@@ -125,7 +237,7 @@ $width-sidebar: 160px !global;
 .social__link {
    .fa{
       color: #b5b0f7;
-      font-size: 22px;
+      font-size: 1.38rem;
       transition: 0.4s;
    }
    &:hover{

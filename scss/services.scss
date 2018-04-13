@@ -3,26 +3,35 @@
 @import "sidebar.scss";
 @import "footer.scss";
 @import "fm.revealator.jquery.min.scss";
+.wrapper{
+
+}
 .services{
    width: 86vw;
-   margin-left: $width-sidebar+20px;
-margin-right: 15px;
+   margin-left: $width-sidebar+1.25rem;
+   margin-right: .94rem;
+   
+   border: 1px solid white;
+   @media (max-width: 480px) {
+      margin-left: 10px;
+      margin-right: 10px;
+   }
 
 }
 .services__container, .skill__container, .opinion__container{
-   max-width: 950px;
+   max-width: 59.38rem;
    margin: 0 auto;
    text-align: center;
 }
 .h1{
    font-family: Montserrat;
-   font-size: 24px;
+   font-size: 1.5rem;
    font-weight: 500;
    text-transform: uppercase;
    color: #000000;
 }
 .h2{
-   font-size: 16px;
+   font-size: 1rem;
    font-weight: 400;
    font-family: Montserrat;
    text-transform: uppercase;
@@ -30,15 +39,15 @@ margin-right: 15px;
 
 }
 .head-section{
-   margin-top: 100px;
-   border-bottom: 2px solid #e1e1e1;
-   padding-bottom: 32px;
+   margin-top: 6.25rem;
+   border-bottom: .13rem solid #e1e1e1;
+   padding-bottom: 2rem;
    position: relative;
    &::after{
    position: absolute;
    content: "";
-   height: 12px;
-   width: 12px;
+   height: .75rem;
+   width: .75rem;
    background: #362cb1;
    border-radius: 50%;
    bottom:  0;
@@ -46,7 +55,7 @@ margin-right: 15px;
    }
 }
 .advantages {
-    margin-top: 75px;
+    margin-top: 4.69rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -54,14 +63,28 @@ margin-right: 15px;
     @media (min-width: 992px) and (max-width: 1199px) {
         justify-content: space-around;
     }
+        /* Portrait tablets and small desktops */
+    @media (min-width: 768px) and (max-width: 991px) {
+    justify-content: space-around;
+    }
+
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 767px) {
+    justify-content: space-around;
+    }
+
+    /* Landscape phones and smaller */
+    @media (max-width: 480px) {
+    justify-content: center;
+    }
 }
 
 .advantages__item {
     flex-basis: 31%;
     padding-left: 0;
-    min-width: 260px;
-    padding-right: 8px;
-    margin-top: 30px;
+    min-width: 16.25rem;
+    padding-right: .5rem;
+    margin-top: 1.88rem;
 }
 
 .advantages__header {
@@ -71,12 +94,12 @@ margin-right: 15px;
     align-items: center;
     .fa {
         color: #FF7400;
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 600;
     }
     i{
         display: inline-block;
-        margin-right: 10px;
+        margin-right: .63rem;
         text-align: left;
 
     }
@@ -84,7 +107,7 @@ margin-right: 15px;
 .adventages__title{
     display: inline-block;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: .75rem;
     font-weight: 600;
     text-transform: uppercase;
     text-align: left;
@@ -97,12 +120,12 @@ margin-right: 15px;
     text-align: justify;
     color: #5a5a5a;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: .75rem;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 1.25rem;
 }
 .progress {
-    padding: 100px 0;
+    padding: 6.25rem 0;
     background-color: #f7f7f7;
 }
 
@@ -111,14 +134,18 @@ margin-right: 15px;
     padding:0;
     margin: 0;
 
+    @media (max-width: 480px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 }
 
 .achivment__item {
-    margin-right: 15px;
+    margin-right: .94rem;
     .fa{
         color: #FFC840;
-        font-size: 36px;
-        margin-bottom: 15px;
+        font-size: 2.25rem;
+        margin-bottom: .94rem;
 
     }
 }
@@ -130,19 +157,19 @@ margin-right: 15px;
 .achivment__number {
     color: #35373e;
     font-family: Montserrat;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: .63rem 0;
 }
 
 .achivment__text {
     color: #5e5e5e;
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: .88rem;
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 20px;
+    line-height: 1.25rem;
 
 }
 .howIWork {
@@ -157,7 +184,7 @@ margin-right: 15px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    padding-top: 50px;
+    padding-top: 3.13rem;
 }
 
 .process__item {
@@ -180,7 +207,7 @@ margin-right: 15px;
 .process__number {
     color: #d4d4d4;
     font-family: Montserrat;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -190,7 +217,7 @@ margin-right: 15px;
 .process__title {
     color: #000000;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
 
@@ -200,6 +227,6 @@ margin-right: 15px;
 .process__text {
     color: #5a5a5a;
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: .88rem;
     font-weight: 400;
 }
