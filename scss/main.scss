@@ -3,11 +3,11 @@ body{
  font-size: 16px;
 }
 .wrapper{
-    position: relative;
+
 }
 .main {
-    height: 100%;
-   width: 100vw;
+   height: 100%;
+   width: 86vw;
    margin-left: $width-sidebar;
    position: relative;
 
@@ -31,24 +31,15 @@ body{
 
 }
 
-.main__content {
-
-}
-
-.typed {
-
-}
-
 .main__h1 {
    font-size: 5rem;
    color: #fff;
    background: rgba(0,0,0,0.7);
    padding: .63rem;
-   top:150px;
-   right: 10px;
    position: absolute;
    z-index: 10;
-
+    left:30px;
+    top: 45px;
    @media (min-width: 768px) and (max-width: 991px) {
 
    }
@@ -59,7 +50,9 @@ body{
    }
 
    @media (max-width: 480px) {
-
+     font-size: 4rem;
+     left: 30%;
+     top: 130px;
    }
 
 }
@@ -73,11 +66,8 @@ body{
     z-index: 10;
     right:6.25rem;
     top:0;
-
 }
-.cover{
 
-}
 .main__text {
     padding: .31rem;
     font-size: 1.38rem;
@@ -88,8 +78,8 @@ body{
     background: rgba(0,0,0,0.7);
     position: absolute;
     z-index: 10;
-    right:15%;
-    top:230px;
+    top: 200px;
+    left:30px;
     @media (min-width: 768px) and (max-width: 991px) {
 
     }
@@ -100,7 +90,9 @@ body{
     }
 
     @media (max-width: 480px) {
-
+        font-size: 1.2rem;
+        left: 40px;
+        top: 230px;
     }
 }
 .video-box{

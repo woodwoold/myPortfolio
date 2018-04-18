@@ -26,6 +26,22 @@
       margin-left: 10px;
       margin-right: 10px;
       width: 90vw;
+      padding-top: 30px;
+   }
+   /* Для альбомной ориентации телефонов */
+
+   @media (max-width: 767px) and (orientation:landscape) {
+       padding-top: 30px;
+       margin-left: 10px;
+       margin-right: 10px;
+        width: 96vw;
+   }
+   @media (max-width: 480px) and (orientation:landscape) {
+       padding-top: 30px;
+       width: 100vw;
+       margin-left: 10px;
+       margin-right: 10px;
+       width: 96vw;
    }
 
 
@@ -34,6 +50,12 @@
    max-width: 59.38rem;
    margin: 0 auto;
    text-align: center;
+   @media (max-width: 767px) and (orientation:landscape) {
+
+   }
+   @media (max-width: 480px) and (orientation:landscape) {
+
+   }
 }
 .h1{
    font-family: Montserrat;
@@ -107,10 +129,14 @@
 }
 .info__list {
    flex-grow: 1;
-   margin-top: 0;
+   margin-top: 0px;
    margin-bottom: 0;
    padding-left: 0;
    margin-left: 3.13rem;
+   @media (max-width: 480px) {
+      margin-bottom: 30px;
+   }
+
 }
 
 .info__item {
@@ -126,6 +152,9 @@
       padding-bottom: 0;
       margin-bottom: 0;
    }
+   @media (max-width: 480px) {
+      font-size: 1.1rem;
+   }
 }
 
 .info__text_bold {
@@ -134,6 +163,9 @@
    font-weight: 600;
    color: #35373e;
    margin-right: .31rem;
+   @media (max-width: 480px) {
+      font-size: 1.2rem;
+   }
 }
 .info_box-text{
    margin-left: 3.13rem;
@@ -146,6 +178,9 @@
    font-size: .88rem;
    text-align: justify;
    text-indent: 2.19rem;
+   @media (max-width: 480px) {
+      font-size: 1.1rem;
+   }
 }
 .resume-btn{
    margin-left: 3.13rem;

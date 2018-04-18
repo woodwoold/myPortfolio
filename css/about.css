@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -2615,8 +2616,7 @@ html {
   z-index: 100;
   /* Portrait tablets and small desktops */
   /* Landscape phones and portrait tablets */
-  /* Landscape phones and smaller */
-  /* Delite scrollbar fo long device */ }
+  /* Landscape phones and smaller */ }
   .nav::-webkit-scrollbar-track {
     border-radius: .63rem;
     background-color: #372db4; }
@@ -2648,7 +2648,7 @@ html {
       flex-wrap: wrap;
       margin-top: 0px;
       width: 100%; } }
-  @media (max-width: 767px) and (orientation: portrait) {
+  @media (max-width: 767px) and (orientation: landscape) {
     .nav {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -2658,7 +2658,7 @@ html {
       flex-wrap: wrap;
       margin-top: 0px;
       width: 100%; } }
-  @media (max-width: 480px) and (orientation: portrait) {
+  @media (max-width: 480px) and (orientation: landscape) {
     .nav {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -2666,8 +2666,7 @@ html {
       flex-direction: row;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      margin-top: 0px;
-      width: 100%; } }
+      margin-top: 0px; } }
 
 .user {
   background-color: #fff;
@@ -2709,11 +2708,10 @@ html {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  /* Landscape phones and portrait tablets */ }
-  @media (max-width: 767px) {
-    .menu {
-      /* Landscape phones and smaller */ } }
-  @media (max-width: 767px) and (max-width: 480px) {
+  /* Landscape phones and portrait tablets */
+  /* Landscape phones and smaller */
+  /* Для альбомной ориентации телефонов */ }
+  @media (max-width: 480px) {
     .menu {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2726,6 +2724,36 @@ html {
       flex-wrap: wrap;
       -ms-flex-pack: distribute;
       justify-content: space-around; } }
+  @media (max-width: 767px) and (orientation: landscape) {
+    .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      width: 100%; } }
+  @media (max-width: 480px) and (orientation: landscape) {
+    .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      width: 100%; } }
 
 .menu__item {
   -webkit-box-sizing: border-box;
@@ -2789,6 +2817,12 @@ html {
   @media (max-width: 480px) {
     .social {
       display: none; } }
+  @media (max-width: 767px) and (orientation: landscape) {
+    .social {
+      display: none; } }
+  @media (max-width: 480px) and (orientation: landscape) {
+    .social {
+      display: none; } }
 
 .social__item {
   display: inline-block;
@@ -2815,13 +2849,8 @@ html {
   -webkit-box-shadow: inset 0 0.38rem 1.25rem rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 0.38rem 1.25rem rgba(0, 0, 0, 0.15);
   padding-top: 2.5rem;
-  margin-left: 8rem;
   margin-top: 7.5rem; }
   @media (max-width: 480px) {
-    .foooter {
-      margin-left: 0;
-      margin-right: 0; } }
-  @media (max-width: 480px) and (max-width: 480px) {
     .foooter {
       margin-left: 0;
       margin-right: 0;
@@ -2846,7 +2875,8 @@ html {
   margin-right: 1.88rem;
   border: 1px solid white;
   /* Portrait tablets and small desktops */
-  /* Landscape phones and portrait tablets */ }
+  /* Landscape phones and portrait tablets */
+  /* Для альбомной ориентации телефонов */ }
   @media (min-width: 768px) and (max-width: 991px) {
     .about {
       margin-right: 20px;
@@ -2859,7 +2889,21 @@ html {
     .about {
       margin-left: 10px;
       margin-right: 10px;
-      width: 90vw; } }
+      width: 90vw;
+      padding-top: 30px; } }
+  @media (max-width: 767px) and (orientation: landscape) {
+    .about {
+      padding-top: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 96vw; } }
+  @media (max-width: 480px) and (orientation: landscape) {
+    .about {
+      padding-top: 30px;
+      width: 100vw;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 96vw; } }
 
 .about__container, .skill__container, .opinion__container {
   max-width: 59.38rem;
@@ -2945,10 +2989,13 @@ html {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 0;
   padding-left: 0;
   margin-left: 3.13rem; }
+  @media (max-width: 480px) {
+    .info__list {
+      margin-bottom: 30px; } }
 
 .info__item {
   text-align: left;
@@ -2962,6 +3009,9 @@ html {
   .info__item:last-child {
     padding-bottom: 0;
     margin-bottom: 0; }
+  @media (max-width: 480px) {
+    .info__item {
+      font-size: 1.1rem; } }
 
 .info__text_bold {
   font-family: Montserrat;
@@ -2969,6 +3019,9 @@ html {
   font-weight: 600;
   color: #35373e;
   margin-right: .31rem; }
+  @media (max-width: 480px) {
+    .info__text_bold {
+      font-size: 1.2rem; } }
 
 .info_box-text {
   margin-left: 3.13rem; }
@@ -2981,6 +3034,9 @@ html {
   font-size: .88rem;
   text-align: justify;
   text-indent: 2.19rem; }
+  @media (max-width: 480px) {
+    .info__text {
+      font-size: 1.1rem; } }
 
 .resume-btn {
   margin-left: 3.13rem;

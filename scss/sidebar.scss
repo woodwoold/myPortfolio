@@ -71,20 +71,19 @@ $width-sidebar: 10rem !global;
     width: 100%;
     }
 
-    @media (max-width: 767px) and (orientation:portrait) {
+    @media (max-width: 767px) and (orientation:landscape) {
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 0px;
         width: 100%;
+
     }
 
-
-    /* Delite scrollbar fo long device */
-    @media (max-width: 480px) and (orientation:portrait) {
+    @media (max-width: 480px) and (orientation:landscape) {
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 0px;
-        width: 100%;
+
     }
 }
 
@@ -136,7 +135,7 @@ $width-sidebar: 10rem !global;
    /* Landscape phones and portrait tablets */
    @media (max-width: 767px) {
 
-
+ }
    /* Landscape phones and smaller */
    @media (max-width: 480px) {
        display: flex;
@@ -144,7 +143,25 @@ $width-sidebar: 10rem !global;
        flex-wrap: wrap;
        justify-content: space-around;
    }
+
+   /* Для альбомной ориентации телефонов */
+   @media (max-width: 767px) and (orientation:landscape) {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       margin-top: 0px;
+       width: 100%;
    }
+   @media (max-width: 480px) and (orientation:landscape) {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       margin-top: 0px;
+       width: 100%;
+   }
+
 
 }
 
@@ -234,7 +251,13 @@ $width-sidebar: 10rem !global;
    /* Landscape phones and smaller */
    @media (max-width: 480px) {
     display: none;
+   }
+   @media (max-width: 767px) and (orientation:landscape) {
+       display: none;
+   }
 
+   @media (max-width: 480px) and (orientation:landscape) {
+     display: none;
    }
 }
 

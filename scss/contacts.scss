@@ -34,8 +34,22 @@
       margin-left: 10px;
       margin-right: 10px;
       width: 90vw;
+      padding-top: 30px;
    }
-
+   /* Для альбомной ориентации телефонов */
+   @media (max-width: 767px) and (orientation:landscape) {
+       padding-top: 30px;
+       margin-left: 10px;
+       margin-right: 10px;
+        width: 96vw;
+   }
+   @media (max-width: 480px) and (orientation:landscape) {
+       padding-top: 30px;
+       width: 100vw;
+       margin-left: 10px;
+       margin-right: 10px;
+       width: 96vw;
+   }
 
 }
 .touch__container{

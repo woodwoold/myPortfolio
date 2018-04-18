@@ -28,6 +28,21 @@
       margin-left: 10px;
       margin-right: 10px;
       width: 90vw;
+      padding-top: 30px;
+   }
+   /* Для альбомной ориентации телефонов */
+   @media (max-width: 767px) and (orientation:landscape) {
+       padding-top: 30px;
+       margin-left: 10px;
+       margin-right: 10px;
+        width: 96vw;
+   }
+   @media (max-width: 480px) and (orientation:landscape) {
+       padding-top: 30px;
+       width: 100vw;
+       margin-left: 10px;
+       margin-right: 10px;
+       width: 96vw;
    }
 
 }
@@ -90,6 +105,7 @@
     @media (max-width: 480px) {
     justify-content: center;
     }
+
 }
 
 .advantages__item {
@@ -157,6 +173,14 @@
       justify-content: center;
       flex-direction: column;
     }
+    /* Для альбомной ориентации телефонов */
+    @media (max-width: 767px) and (orientation:landscape) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    @media (max-width: 480px) and (orientation:landscape) {
+        justify-content: space-around;
+    }
 }
 
 .achivment__item {
@@ -166,6 +190,15 @@
         font-size: 2.25rem;
         margin-bottom: .94rem;
 
+    }
+    /* Для альбомной ориентации телефонов */
+    @media (max-width: 767px) and (orientation:landscape) {
+        max-width: 120px;
+        justify-content: space-around;
+    }
+    @media (max-width: 480px) and (orientation:landscape) {
+        justify-content: space-around;
+        max-width: 120px;
     }
 
 }
@@ -208,14 +241,14 @@
 .process__item {
     margin: 0;
     padding: 0;
-    width: 48%;
+    width: 45%;
     position: relative;
     &:nth-child(n){
         text-align: right;
     }
     &:nth-child(2n){
         text-align: left;
-        margin-left: 50%
+        margin-left: 52%
     }
 
 
