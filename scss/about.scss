@@ -2,20 +2,19 @@
 @import "font-awesome.min.scss";
 @import "sidebar.scss";
 @import "footer.scss";
-
+@import "slider/owl.theme.default.scss";
+@import "slider/owl.carousel.scss";
 
 .about{
    width: 86vw;
    margin-left: $width-sidebar+1.25rem;
    margin-right: 1.88rem;
    border: 1px solid white;
-
    /* Portrait tablets and small desktops */
    @media (min-width: 768px) and (max-width: 991px) {
        margin-right: 20px;
        width: 80vw;
    }
-
    /* Landscape phones and portrait tablets */
    @media (max-width: 767px) {
        margin-right: 20px;
@@ -50,12 +49,6 @@
    max-width: 59.38rem;
    margin: 0 auto;
    text-align: center;
-   @media (max-width: 767px) and (orientation:landscape) {
-
-   }
-   @media (max-width: 480px) and (orientation:landscape) {
-
-   }
 }
 .h1{
    font-family: Montserrat;
@@ -212,6 +205,89 @@
 }
 
 
+// progress bar стили
+$background-color:#e0e0e0;
+$bar-empty:#cfd6dd;
+$bar-color:#55708d;
+
+.progress-bar {
+  height:3px;
+  width:100%;
+  position:relative;
+  z-index:10;
+    bottom:-20px;
+  background-color:$bar-empty;
+
+  .progress {
+    position:relative;
+    height:100%;
+    background-color:$bar-color;
+    transition:width 0.5s ease-out;
+    border-radius: 0px 2px 2px 0px
+
+  }
+
+}
+
+// Анимация прогресс бара
+.fill-1 {
+  animation:fill-1 0.5s ease-out 0s;
+  animation-fill-mode:forwards;
+  width:0%;
+}
+.fill-2  {
+  animation:fill-2 0.5s ease-out 0.5s;
+  animation-fill-mode:forwards;
+  width:0%;
+}
+.fill-3 {
+  animation:fill-3 0.5s ease-out 1s;
+  animation-fill-mode:forwards;
+  width:0%;
+}
+.fill-4 {
+  animation:fill-4 0.5s ease-out 1.5s;
+  animation-fill-mode:forwards;
+  width:0%;
+}
+.fill-5  {
+  animation:fill-5 0.5s ease-out 2s;
+  animation-fill-mode:forwards;
+  width:0%;
+}
+.fill-6 {
+  animation:fill-6 0.5s ease-out 2.5s;
+  animation-fill-mode:forwards;
+  width:0%;
+}
+
+@keyframes fill-1 {
+  0% { width:0%; }
+  100% { width:85%; }
+}
+@keyframes fill-2 {
+  0% { width:0%; }
+  100% { width:60%; }
+}
+@keyframes fill-3 {
+  0% { width:0%; }
+  100% { width:80%; }
+}
+@keyframes fill-4 {
+  0% { width:0%; }
+  100% { width:60%; }
+}
+@keyframes fill-5 {
+  0% { width:0%; }
+  100% { width:65%; }
+}
+@keyframes fill-6 {
+  0% { width:0%; }
+  100% { width:85%; }
+}
+
+
+
 .skill-list-box{
    display: flex;
 }
@@ -221,6 +297,7 @@
    padding-left: 0;
    flex-basis: 45%;
    justify-content: space-between;
+
    &:last-child{
       margin-left: 10%;
    }
@@ -234,30 +311,22 @@
    font-weight: 600;
    text-transform: uppercase;
    padding: 1.25rem .63rem;
-   border-bottom: .13rem solid #e0e0e0;
+
    padding-left: 0;
    margin-top: .63rem;
-
-}
-.opinion {
-
-}
-#slider {
-  position: relative;
+   position: relative;
 }
 
 .feedback{
     margin-left: 0;
     padding-left: 0;
 }
-
 .feedback__item {
    max-width: 40.63rem;
    margin: 0 auto;
    text-align: center;
    margin-top: 3.75rem;
    padding-left: 0;
-
 }
 
 .feedback__text {
@@ -270,20 +339,15 @@
    text-align: center;
 }
 
-.feedback__person {
-
-}
-
 .feedback__img-box {
    margin: 0 auto;
-   width: 5rem;
-   height: 5rem;
+   width: 120px;
+   height: 120px;
    margin-top: 2.5rem;
-
 }
 
 .feedback__img {
-   max-width: 100%;
+   height: 100%;
    border-radius: 50%;
 }
 
@@ -293,7 +357,6 @@
    font-size: .88rem;
    font-weight: 300;
    font-weight: 600;
-
 }
 
 .feedback__company {
@@ -302,7 +365,4 @@
    font-size: .88rem;
    font-weight: 300;
    font-weight: 400;
-}
-.active-feedback{
-   display: block;
 }

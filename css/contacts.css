@@ -2632,7 +2632,8 @@ html {
   @media (min-width: 768px) and (max-width: 991px) {
     .nav {
       height: auto;
-      min-width: auto; } }
+      min-width: auto;
+      margin-top: 100px; } }
   @media (max-width: 767px) {
     .nav {
       height: auto;
@@ -2684,8 +2685,8 @@ html {
       display: none; } }
 
 .img-wrap {
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 6rem;
+  height: 6rem;
   margin: 0 auto;
   margin-bottom: .63rem; }
 
@@ -2785,7 +2786,7 @@ html {
 
 .menu__link {
   display: block;
-  padding: 11% 0 .31rem 0;
+  padding: 11% 0 9% 0;
   /* Landscape phones and smaller */ }
   @media (min-width: 768px) and (max-width: 991px) {
     .menu__link {

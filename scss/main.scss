@@ -2,35 +2,28 @@ body{
  background-color: #101010;
  font-size: 16px;
 }
-.wrapper{
 
-}
 .main {
    height: 100%;
    width: 86vw;
    margin-left: $width-sidebar;
    position: relative;
-
    /* Portrait tablets and small desktops */
    @media (min-width: 768px) and (max-width: 991px) {
        margin-right: 20px;
        width: 80vw;
    }
-
    /* Landscape phones and portrait tablets */
    @media (max-width: 767px) {
        margin-right: 20px;
        width: 74vw;
    }
-
    @media (max-width: 480px) {
       margin-left: 10px;
       margin-right: 10px;
       width: 68vw;
    }
-
 }
-
 .main__h1 {
    font-size: 5rem;
    color: #fff;
@@ -43,12 +36,10 @@ body{
    @media (min-width: 768px) and (max-width: 991px) {
 
    }
-
    /* Landscape phones and portrait tablets */
    @media (max-width: 767px) {
 
    }
-
    @media (max-width: 480px) {
      font-size: 4rem;
      left: 30%;
@@ -67,7 +58,6 @@ body{
     right:6.25rem;
     top:0;
 }
-
 .main__text {
     padding: .31rem;
     font-size: 1.38rem;
@@ -83,21 +73,17 @@ body{
     @media (min-width: 768px) and (max-width: 991px) {
 
     }
-
     /* Landscape phones and portrait tablets */
     @media (max-width: 767px) {
 
     }
-
     @media (max-width: 480px) {
         font-size: 1.2rem;
         left: 40px;
         top: 230px;
     }
 }
-.video-box{
 
-}
 #video-background {
 /*  making the video fullscreen  */
   position: fixed;
